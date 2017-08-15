@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+    border: 1px solid black  ;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+#entrychoices{
+	margin: 80px auto;
+	width: 300px;
+        
+}
+.center{
+	margin: auto;       
+	width: 40%;
+        padding: 140px;
+        
+}
+</style>
+</head>
+<body>
+links
+<br>
+<form action="/ddo3" method="post" >
+welcome ${length}
+
+
+<input type="radio" name ="value1" value= ${all_users[0].id} />to view ${all_users[0].id} 
+<br>
+<input type="radio" name ="value1" value= "74" />to view ${all_users[0].id} 
+<br>
+<input type="submit" value="proceed" />
+<br>
+
+</form>
+
+</body>
+</html>

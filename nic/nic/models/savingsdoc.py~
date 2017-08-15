@@ -1,0 +1,18 @@
+from sqlalchemy import (
+    Column,
+    Index,
+    Integer,
+    Text,
+)
+
+from .meta import Base
+
+
+class savingsdoc(Base):
+    __tablename__ = 'savingsdoc'
+    phpath = Column(Text, primary_key=True)
+    document_no = Column(Integer)
+    savings_amount = Column(Integer)
+    submitted_date = Column(Text)
+    userid = Column(Integer)
+	status = Column(Integer)
